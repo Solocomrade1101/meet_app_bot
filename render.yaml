@@ -5,4 +5,6 @@ services:
     buildCommand: ""
     startCommand: python bot.py
     plan: free
-    autoDeploy: true
+    envVars:
+      - key: BOT_TOKEN
+        sync: false

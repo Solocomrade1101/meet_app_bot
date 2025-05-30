@@ -1,7 +1,8 @@
 import requests
 import time
+import os
 
-TOKEN = "7663084805:AAGK_fVh-797YIGRjw-ArHHeexEe6p5YnzE"
+TOKEN = os.getenv("BOT_TOKEN")
 URL = f"https://api.telegram.org/bot{TOKEN}"
 
 last_update_id = 0
